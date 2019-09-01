@@ -15,7 +15,7 @@ Background
 ==========
 I was asked to build an API which allows user to query 100GB of Data using Serverless services, At the time  of writing this document API gateway maximum integration timeout 29 seconds and Lambda has maximum memory of 3GB and two CPU cores.
 
-I created some Benchmarks on S3 Select Data and found if I try to query 100MB data, it usually finished in 1-2 seconds. Bigger the size of Data slower the query.
+I created some Benchmarks on S3 Select Data and found if I try to query 100MB data, it usually finished in 1-2 seconds. Bigger the size of Data longer the time of query.
 
 Problem
 =======
@@ -48,5 +48,5 @@ Can this be improved further to query large amount of data?
 Lambda concurrency was not used at the moment, but using concurrency I can say we can easily search larger data under 30 seconds.
 
 Is the cost effective?
-Yes, It's cheaper than using Amazon Athena, Amazon Redshift and Amazor EMR. But In the end it all depends on amount of data and architecture.
+Yes, It's cheaper than using Amazon Athena, Amazon Redshift and Amazon EMR. But In the end it all depends on amount of data and architecture.
 
