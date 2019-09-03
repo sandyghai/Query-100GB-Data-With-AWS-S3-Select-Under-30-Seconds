@@ -42,11 +42,14 @@ Discussion
 This will provide you an overview to understand and implement a solution using S3 select to query a large set of data.
 
 Have you implemented this solution?
+
 Yes, I implemented using serverless architecture and created Lambda function to perform query operations; Added multithreading to query data simultaneously. Attached Lamda function to API Gateway.
 
 Can this be improved further to query a large amount of data?
+
 Lambda concurrency was not used at the moment, but using concurrency I can say we can easily search larger data under 30 seconds.
 
 Is this cost-effective?
+
 Yes, It's cheaper than using Amazon Athena, Amazon Redshift and Amazon EMR. But In the end, it all depends on the amount of data and architecture.
 
