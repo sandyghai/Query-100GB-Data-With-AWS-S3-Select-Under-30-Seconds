@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "logs:CreateLogGroup"
+            ],
+            "Resource": "arn:aws:logs:ap-southeast-2:REPLACE-WITH-YOUR-AWS-ACCOUNT:log-group:/aws/lambda/REPLACE-WITH-YOUR-BUCKET-NAME:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::REPLACE-WITH-YOUR-BUCKET-NAME/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::REPLACE-WITH-YOUR-BUCKET-NAME"
+            ]
+        }
+    ]
+}
