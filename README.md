@@ -52,4 +52,3 @@ Lambda concurrency was not used at the moment, but using concurrency I can say w
 Is this cost-effective?
 
 Yes, It's cheaper than using Amazon Athena, Amazon Redshift and Amazon EMR. But In the end, it all depends on the amount of data and architecture.
-
